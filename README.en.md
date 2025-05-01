@@ -11,10 +11,10 @@
 To run the project locally, follow these steps:
 
 1. Clone the repository:  
-   `git clone https://github.com/YourUsername/Ticket-Sales-System.git`
+   `git clone https://github.com/Avigail3648/Chinese-Auction-System.git`
 
 2. Navigate to the project directory:  
-   `cd Ticket-Sales-System`
+   `cd Chinese-Auction-System`
 
 3. Install the dependencies for the Backend:  
    `dotnet restore`
