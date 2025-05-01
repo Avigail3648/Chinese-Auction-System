@@ -3,6 +3,12 @@
 ## עברית
 
 ### טכנולוגיות בשימוש
+- **צד לקוח (Frontend)**: פותח באמצעות Angular ו-PrimeNG.
+- **צד שרת (Backend)**: פותח באמצעות .NET Core API.
+- **מסד נתונים**: SQL Serve.
+
+
+
 - **Frontend (צד לקוח)**: נבנה באמצעות Angular ו-PrimeNG  
 - **Backend (צד שרת)**: נבנה באמצעות .NET Core API  
 - **Database (מסד נתונים)**: SQL Server
@@ -12,19 +18,14 @@
 
 1. שִכְפְלו את הרפוזיטורי:  
    `git clone https://github.com/YourUsername/Ticket-Sales-System.git`
-
 2. היכנסו לתיקיית הפרויקט:  
    `cd Ticket-Sales-System`
-
 3. התקינו את התלויות של ה-Backend:  
    `dotnet restore`
-
 4. הריצו את שרת ה-API:  
    `dotnet run`
-
 5. התקינו את התלויות של ה-Frontend:  
    `npm install`
-
 6. הריצו את שרת הפיתוח של Angular:  
    `ng serve`
 
