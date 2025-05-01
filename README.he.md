@@ -7,23 +7,24 @@
 - **צד שרת (Backend)**: פותח באמצעות .NET Core API.
 - **מסד נתונים**: SQL Serve.
 
+
+
 ### הוראות התקנה מקומית
 כדי להריץ את הפרויקט באופן מקומי, בצעו את השלבים הבאים:
 
-1. שִכְפְלו את הרפוזיטורי:  
-   `git clone https://github.com/YourUsername/Ticket-Sales-System.git`
-2. היכנסו לתיקיית הפרויקט:  
-   `cd Ticket-Sales-System`
-3. התקינו את התלויות של ה-Backend:  
-   `dotnet restore`
-4. הריצו את שרת ה-API:  
-   `dotnet run`
-5. התקינו את התלויות של ה-Frontend:  
-   `npm install`
-6. הריצו את שרת הפיתוח של Angular:  
-   `ng serve`
-
-7. פִּתחו את הדפדפן וגשו לכתובת `http://localhost:4200` כדי לצפות בפרויקט.
+1. שִכְפְלו את הרפוזיטורי:  
+   `git clone https://github.com/YourUsername/Ticket-Sales-System.git`
+2. היכנסו לתיקיית הפרויקט:  
+   `cd Ticket-Sales-System`
+3. התקינו את התלויות של ה-Backend:  
+   `dotnet restore
+4. הריצו את שרת ה-API:  
+   `dotnet run`
+5. התקינו את התלויות של ה-Frontend:  
+   `npm install`
+6. הריצו את שרת הפיתוח של Angular:  
+   `ng serve`
+7. פתחו את הדפדפן וגשו לכתובת `http://localhost:4200` כדי לצפות בפרויקט
 
 ### איך לתרום לפרויקט
 1. בצעו Fork לרפוזיטורי.  
