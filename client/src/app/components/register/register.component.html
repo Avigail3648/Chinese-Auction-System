@@ -1,0 +1,71 @@
+<p-toast></p-toast>
+
+@if(!isAdmin){
+<div dir="rtl" class="card login-signup-container">
+    <div class="content-container">
+        <div class="login-section">
+            <div class="inputs">
+                <span class="p-float-label">
+                    <input [style]="{height:'50px'}" id="name" (change)="touchName=true" (focus)="touchName=true"
+                        pInputText [(ngModel)]="name" required class="w-14rem" />
+                    <label>שם משתמש</label>
+                    <small class="p-error" *ngIf="touchName && !name"> שדה חובה*</small>
+                </span>
+            </div>
+            <div class="input-group">
+                <span class="p-float-label ">
+                    <p-password [style]="{height:'50px'}" id="password" [(ngModel)]="password" [toggleMask]="true"
+                        class="w-12rem h-3rem" (change)="touchPassword=true" (focus)="touchPassword=true"
+                        required></p-password>
+                    <label for="password" class="input-label">סיסמה</label>
+                    <small class="p-error" *ngIf="touchPassword && !password">שדה חובה*</small>
+                </span>
+            </div>
+            <div class="inputs">
+                <span class="p-float-label">
+                    <input [style]="{height:'50px'}" id="phone" pInputText [(ngModel)]="phone" class="w-14rem" />
+                    <label>פלאפון</label>
+                </span>
+            </div>
+            <div class="inputs">
+                <span class="p-float-label">
+                    <input [style]="{height:'50px'}" id="address" pInputText [(ngModel)]="address" class="w-14rem" />
+                    <label>כתובת</label>
+                </span>
+            </div>
+            <div class="inputs">
+                <span class="p-float-label">
+                    <input [style]="{height:'50px'}" id="mail" pInputText [(ngModel)]="mail" class="w-14rem"
+                        (focus)="touchEmail=true" required type="mail" />
+                    <label> מייל</label><br>
+                    <small class="p-error" *ngIf="touchEmail && !mail"> שדה חובה*</small>
+                    <small class="p-error"
+                        *ngIf="touchEmail && mail && (!mail.includes('@') || (!mail.includes('.com') && !mail.includes('.COM') && !mail.includes('org.co.il') && !user.mail.includes('gov.il')))">
+                        כתובת מייל לא תקינה</small>
+                </span>
+            </div>
+            <button
+                [disabled]="!mail || !password || mail &&( !mail.includes('@') || (!mail.includes('.com') && !mail.includes('co.il') && !mail.includes('gov.il'))) || !name"
+                icon="pi pi-user-plus" pButton (click)="register()" class="login-button" label="רישום וכניסה"></button>
+        </div>
+
+        <div class="divider">
+            <div class="divider-line"></div>
+            <span class="divider-text">/</span>
+            <div class="divider-line"></div>
+        </div>
+
+        <div
+            class="signup-section w-full md:w-5 flex align-items-center justify-content-center py-5 flex flex-col gap-2">
+            <button label="כניסה" icon="pi pi-user" (click)="navigate('login')" pButton severity="success"
+                class="signup-button"></button>
+                <button label="כניסה כמנהל" icon="pi pi-graduation-cap" (click)="loginAsAdmin()" pButton severity="success"></button>
+
+        </div>
+    </div>
+</div>
+}
+
+@if(isAdmin){
+<app-admin-login (returnToFather)="isAdmin=false"></app-admin-login>
+}

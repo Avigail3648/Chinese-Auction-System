@@ -1,0 +1,364 @@
+[
+  {
+    "ContainingType": "ChineseAuctionApi.Controllers.AuthUserController",
+    "Method": "getRole",
+    "RelativePath": "api/AuthUser/getRole",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChineseAuctionApi.Controllers.AuthUserController",
+    "Method": "Login",
+    "RelativePath": "api/AuthUser/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ChineseAuctionApi.Models.LoginRequestt",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChineseAuctionApi.Controllers.AuthUserController",
+    "Method": "register",
+    "RelativePath": "api/AuthUser/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "ChineseAuctionApi.Models.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChineseAuctionApi.Controllers.BasketsController",
+    "Method": "getBasketByUser",
+    "RelativePath": "api/Baskets",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChineseAuctionApi.Controllers.BasketsController",
+    "Method": "deleteBasket",
+    "RelativePath": "api/Baskets/{basketID}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "basketID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChineseAuctionApi.Controllers.BasketsController",
+    "Method": "addBasket",
+    "RelativePath": "api/Baskets/{giftID}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "giftID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChineseAuctionApi.Controllers.CardsController",
+    "Method": "addCards",
+    "RelativePath": "api/Cards",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cards",
+        "Type": "System.Collections.Generic.List\u00601[[ChineseAuctionApi.Models.Card, ChineseAuctionApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChineseAuctionApi.Controllers.CardsController",
+    "Method": "updateCardToWin",
+    "RelativePath": "api/Cards",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cardID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChineseAuctionApi.Controllers.CardsController",
+    "Method": "getAllCardsByGiftID",
+    "RelativePath": "api/Cards/{giftID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "giftID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChineseAuctionApi.Controllers.CardsController",
+    "Method": "getAllRevenue",
+    "RelativePath": "api/Cards/getAllRevenue",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChineseAuctionApi.Controllers.CardsController",
+    "Method": "getAllWinCard",
+    "RelativePath": "api/Cards/getAllWinCard",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChineseAuctionApi.Controllers.DonorsController",
+    "Method": "getAll",
+    "RelativePath": "api/Donors",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[ChineseAuctionApi.Models.Donor, ChineseAuctionApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ChineseAuctionApi.Controllers.DonorsController",
+    "Method": "addDonor",
+    "RelativePath": "api/Donors",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "donor",
+        "Type": "ChineseAuctionApi.Models.Donor",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChineseAuctionApi.Controllers.DonorsController",
+    "Method": "updateDonor",
+    "RelativePath": "api/Donors",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "donor",
+        "Type": "ChineseAuctionApi.Models.Donor",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChineseAuctionApi.Controllers.DonorsController",
+    "Method": "getDonorById",
+    "RelativePath": "api/Donors/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChineseAuctionApi.Controllers.DonorsController",
+    "Method": "deleteDonor",
+    "RelativePath": "api/Donors/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChineseAuctionApi.Controllers.GiftsController",
+    "Method": "getAllWhitNames",
+    "RelativePath": "api/Gifts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChineseAuctionApi.Controllers.GiftsController",
+    "Method": "addGift",
+    "RelativePath": "api/Gifts",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gift",
+        "Type": "ChineseAuctionApi.Models.GiftWhitNames",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ChineseAuctionApi.Controllers.GiftsController",
+    "Method": "updateGift",
+    "RelativePath": "api/Gifts",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gift",
+        "Type": "ChineseAuctionApi.Models.GiftWhitNames",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChineseAuctionApi.Controllers.GiftsController",
+    "Method": "getGiftById",
+    "RelativePath": "api/Gifts/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChineseAuctionApi.Controllers.GiftsController",
+    "Method": "deleteGift",
+    "RelativePath": "api/Gifts/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChineseAuctionApi.Controllers.GiftsController",
+    "Method": "getCategoriesNames",
+    "RelativePath": "api/Gifts/CategoriesNames",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChineseAuctionApi.Controllers.GiftsController",
+    "Method": "getGiftsByDonorID",
+    "RelativePath": "api/Gifts/getGiftsByDonorID/{donorid}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "donorid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChineseAuctionApi.Controllers.LotteryController",
+    "Method": "randomWinPerGift",
+    "RelativePath": "api/Lottery/{giftID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "giftID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

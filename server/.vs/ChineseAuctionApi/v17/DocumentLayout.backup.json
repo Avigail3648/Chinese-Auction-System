@@ -1,0 +1,143 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8\u05D9\u05DD\\\u200F\u200F\u05D4\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8 \u05E9\u05DC \u05D4\u05DE\u05DB\u05D9\u05E8\u05D4 \u05D4\u05E1\u05D9\u05E0\u05D9\u05EA!!!-\u05D4\u05D8\u05D5\u05D1 \u05D9\u05E9 \u05DC\u05D4\u05EA\u05E7\u05D9\u05DF \u05DC\u05D0\u05E7\u05E1\u05DC \u05D5\u05DC\u05D4\u05D5\u05E8\u05D9\u05D3\u05DE\u05D4\u05E2\u05E8\u05D4\u05D0\u05D5\u05EA\u05DD\\server\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6B5A5DFE-5C39-4EBE-BD61-B48888E88971}|ChineseAuctionApi\\ChineseAuctionApi.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8\u05D9\u05DD\\\u200F\u200F\u05D4\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8 \u05E9\u05DC \u05D4\u05DE\u05DB\u05D9\u05E8\u05D4 \u05D4\u05E1\u05D9\u05E0\u05D9\u05EA!!!-\u05D4\u05D8\u05D5\u05D1 \u05D9\u05E9 \u05DC\u05D4\u05EA\u05E7\u05D9\u05DF \u05DC\u05D0\u05E7\u05E1\u05DC \u05D5\u05DC\u05D4\u05D5\u05E8\u05D9\u05D3\u05DE\u05D4\u05E2\u05E8\u05D4\u05D0\u05D5\u05EA\u05DD\\server\\chineseauctionapi\\controllers\\authusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B5A5DFE-5C39-4EBE-BD61-B48888E88971}|ChineseAuctionApi\\ChineseAuctionApi.csproj|solutionrelative:chineseauctionapi\\controllers\\authusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\\u200F\u200F\u05D4\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8 \u05E9\u05DC \u05D4\u05DE\u05DB\u05D9\u05E8\u05D4 \u05D4\u05E1\u05D9\u05E0\u05D9\u05EA!!!-\u05D4\u05D8\u05D5\u05D1 \u05D9\u05E9 \u05DC\u05D4\u05EA\u05E7\u05D9\u05DF \u05DC\u05D0\u05E7\u05E1\u05DC \u05D5\u05DC\u05D4\u05D5\u05E8\u05D9\u05D3\u05DE\u05D4\u05E2\u05E8\u05D4\u05D0\u05D5\u05EA\u05DD\\server\\ChineseAuctionApi\\Services\\Basket\\IBasketService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B5A5DFE-5C39-4EBE-BD61-B48888E88971}|ChineseAuctionApi\\ChineseAuctionApi.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8\u05D9\u05DD\\\u200F\u200F\u05D4\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8 \u05E9\u05DC \u05D4\u05DE\u05DB\u05D9\u05E8\u05D4 \u05D4\u05E1\u05D9\u05E0\u05D9\u05EA!!!-\u05D4\u05D8\u05D5\u05D1 \u05D9\u05E9 \u05DC\u05D4\u05EA\u05E7\u05D9\u05DF \u05DC\u05D0\u05E7\u05E1\u05DC \u05D5\u05DC\u05D4\u05D5\u05E8\u05D9\u05D3\u05DE\u05D4\u05E2\u05E8\u05D4\u05D0\u05D5\u05EA\u05DD\\server\\chineseauctionapi\\models\\basket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B5A5DFE-5C39-4EBE-BD61-B48888E88971}|ChineseAuctionApi\\ChineseAuctionApi.csproj|solutionrelative:chineseauctionapi\\models\\basket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\\u200F\u200F\u05D4\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8 \u05E9\u05DC \u05D4\u05DE\u05DB\u05D9\u05E8\u05D4 \u05D4\u05E1\u05D9\u05E0\u05D9\u05EA!!!-\u05D4\u05D8\u05D5\u05D1 \u05D9\u05E9 \u05DC\u05D4\u05EA\u05E7\u05D9\u05DF \u05DC\u05D0\u05E7\u05E1\u05DC \u05D5\u05DC\u05D4\u05D5\u05E8\u05D9\u05D3\u05DE\u05D4\u05E2\u05E8\u05D4\u05D0\u05D5\u05EA\u05DD\\server\\ChineseAuctionApi\\Services\\AuthUserService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\\u200F\u200F\u05D4\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8 \u05E9\u05DC \u05D4\u05DE\u05DB\u05D9\u05E8\u05D4 \u05D4\u05E1\u05D9\u05E0\u05D9\u05EA!!!-\u05D4\u05D8\u05D5\u05D1 \u05D9\u05E9 \u05DC\u05D4\u05EA\u05E7\u05D9\u05DF \u05DC\u05D0\u05E7\u05E1\u05DC \u05D5\u05DC\u05D4\u05D5\u05E8\u05D9\u05D3\u05DE\u05D4\u05E2\u05E8\u05D4\u05D0\u05D5\u05EA\u05DD\\server\\ChineseAuctionApi\\Services\\Basket\\BasketService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\\u200F\u200F\u05D4\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8 \u05E9\u05DC \u05D4\u05DE\u05DB\u05D9\u05E8\u05D4 \u05D4\u05E1\u05D9\u05E0\u05D9\u05EA!!!-\u05D4\u05D8\u05D5\u05D1 \u05D9\u05E9 \u05DC\u05D4\u05EA\u05E7\u05D9\u05DF \u05DC\u05D0\u05E7\u05E1\u05DC \u05D5\u05DC\u05D4\u05D5\u05E8\u05D9\u05D3\u05DE\u05D4\u05E2\u05E8\u05D4\u05D0\u05D5\u05EA\u05DD\\server\\ChineseAuctionApi\\Repositories\\CardRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\\u200F\u200F\u05D4\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8 \u05E9\u05DC \u05D4\u05DE\u05DB\u05D9\u05E8\u05D4 \u05D4\u05E1\u05D9\u05E0\u05D9\u05EA!!!-\u05D4\u05D8\u05D5\u05D1 \u05D9\u05E9 \u05DC\u05D4\u05EA\u05E7\u05D9\u05DF \u05DC\u05D0\u05E7\u05E1\u05DC \u05D5\u05DC\u05D4\u05D5\u05E8\u05D9\u05D3\u05DE\u05D4\u05E2\u05E8\u05D4\u05D0\u05D5\u05EA\u05DD\\server\\ChineseAuctionApi\\Repositories\\IBasketRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\\u200F\u200F\u05D4\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8 \u05E9\u05DC \u05D4\u05DE\u05DB\u05D9\u05E8\u05D4 \u05D4\u05E1\u05D9\u05E0\u05D9\u05EA!!!-\u05D4\u05D8\u05D5\u05D1 \u05D9\u05E9 \u05DC\u05D4\u05EA\u05E7\u05D9\u05DF \u05DC\u05D0\u05E7\u05E1\u05DC \u05D5\u05DC\u05D4\u05D5\u05E8\u05D9\u05D3\u05DE\u05D4\u05E2\u05E8\u05D4\u05D0\u05D5\u05EA\u05DD\\server\\ChineseAuctionApi\\Repositories\\BasketRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IBasketService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u200F\u200F\u05D4\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8 \u05E9\u05DC \u05D4\u05DE\u05DB\u05D9\u05E8\u05D4 \u05D4\u05E1\u05D9\u05E0\u05D9\u05EA!!!-\u05D4\u05D8\u05D5\u05D1 \u05D9\u05E9 \u05DC\u05D4\u05EA\u05E7\u05D9\u05DF \u05DC\u05D0\u05E7\u05E1\u05DC \u05D5\u05DC\u05D4\u05D5\u05E8\u05D9\u05D3\u05DE\u05D4\u05E2\u05E8\u05D4\u05D0\u05D5\u05EA\u05DD\\server\\ChineseAuctionApi\\Services\\Basket\\IBasketService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\\u200F\u200F\u05D4\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8 \u05E9\u05DC \u05D4\u05DE\u05DB\u05D9\u05E8\u05D4 \u05D4\u05E1\u05D9\u05E0\u05D9\u05EA!!!-\u05D4\u05D8\u05D5\u05D1 \u05D9\u05E9 \u05DC\u05D4\u05EA\u05E7\u05D9\u05DF \u05DC\u05D0\u05E7\u05E1\u05DC \u05D5\u05DC\u05D4\u05D5\u05E8\u05D9\u05D3\u05DE\u05D4\u05E2\u05E8\u05D4\u05D0\u05D5\u05EA\u05DD\\server\\ChineseAuctionApi\\Services\\Basket\\IBasketService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u200F\u200F\u05D4\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8 \u05E9\u05DC \u05D4\u05DE\u05DB\u05D9\u05E8\u05D4 \u05D4\u05E1\u05D9\u05E0\u05D9\u05EA!!!-\u05D4\u05D8\u05D5\u05D1 \u05D9\u05E9 \u05DC\u05D4\u05EA\u05E7\u05D9\u05DF \u05DC\u05D0\u05E7\u05E1\u05DC \u05D5\u05DC\u05D4\u05D5\u05E8\u05D9\u05D3\u05DE\u05D4\u05E2\u05E8\u05D4\u05D0\u05D5\u05EA\u05DD\\server\\ChineseAuctionApi\\Services\\Basket\\IBasketService.cs",
+              "RelativeToolTip": "..\\..\\..\\\u200F\u200F\u05D4\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8 \u05E9\u05DC \u05D4\u05DE\u05DB\u05D9\u05E8\u05D4 \u05D4\u05E1\u05D9\u05E0\u05D9\u05EA!!!-\u05D4\u05D8\u05D5\u05D1 \u05D9\u05E9 \u05DC\u05D4\u05EA\u05E7\u05D9\u05DF \u05DC\u05D0\u05E7\u05E1\u05DC \u05D5\u05DC\u05D4\u05D5\u05E8\u05D9\u05D3\u05DE\u05D4\u05E2\u05E8\u05D4\u05D0\u05D5\u05EA\u05DD\\server\\ChineseAuctionApi\\Services\\Basket\\IBasketService.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T16:53:49.801Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthUserController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8\u05D9\u05DD\\\u200F\u200F\u05D4\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8 \u05E9\u05DC \u05D4\u05DE\u05DB\u05D9\u05E8\u05D4 \u05D4\u05E1\u05D9\u05E0\u05D9\u05EA!!!-\u05D4\u05D8\u05D5\u05D1 \u05D9\u05E9 \u05DC\u05D4\u05EA\u05E7\u05D9\u05DF \u05DC\u05D0\u05E7\u05E1\u05DC \u05D5\u05DC\u05D4\u05D5\u05E8\u05D9\u05D3\u05DE\u05D4\u05E2\u05E8\u05D4\u05D0\u05D5\u05EA\u05DD\\server\\ChineseAuctionApi\\Controllers\\AuthUserController.cs",
+              "RelativeDocumentMoniker": "ChineseAuctionApi\\Controllers\\AuthUserController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8\u05D9\u05DD\\\u200F\u200F\u05D4\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8 \u05E9\u05DC \u05D4\u05DE\u05DB\u05D9\u05E8\u05D4 \u05D4\u05E1\u05D9\u05E0\u05D9\u05EA!!!-\u05D4\u05D8\u05D5\u05D1 \u05D9\u05E9 \u05DC\u05D4\u05EA\u05E7\u05D9\u05DF \u05DC\u05D0\u05E7\u05E1\u05DC \u05D5\u05DC\u05D4\u05D5\u05E8\u05D9\u05D3\u05DE\u05D4\u05E2\u05E8\u05D4\u05D0\u05D5\u05EA\u05DD\\server\\ChineseAuctionApi\\Controllers\\AuthUserController.cs",
+              "RelativeToolTip": "ChineseAuctionApi\\Controllers\\AuthUserController.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAuwB8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T17:20:09.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthUserService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u200F\u200F\u05D4\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8 \u05E9\u05DC \u05D4\u05DE\u05DB\u05D9\u05E8\u05D4 \u05D4\u05E1\u05D9\u05E0\u05D9\u05EA!!!-\u05D4\u05D8\u05D5\u05D1 \u05D9\u05E9 \u05DC\u05D4\u05EA\u05E7\u05D9\u05DF \u05DC\u05D0\u05E7\u05E1\u05DC \u05D5\u05DC\u05D4\u05D5\u05E8\u05D9\u05D3\u05DE\u05D4\u05E2\u05E8\u05D4\u05D0\u05D5\u05EA\u05DD\\server\\ChineseAuctionApi\\Services\\AuthUserService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\\u200F\u200F\u05D4\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8 \u05E9\u05DC \u05D4\u05DE\u05DB\u05D9\u05E8\u05D4 \u05D4\u05E1\u05D9\u05E0\u05D9\u05EA!!!-\u05D4\u05D8\u05D5\u05D1 \u05D9\u05E9 \u05DC\u05D4\u05EA\u05E7\u05D9\u05DF \u05DC\u05D0\u05E7\u05E1\u05DC \u05D5\u05DC\u05D4\u05D5\u05E8\u05D9\u05D3\u05DE\u05D4\u05E2\u05E8\u05D4\u05D0\u05D5\u05EA\u05DD\\server\\ChineseAuctionApi\\Services\\AuthUserService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u200F\u200F\u05D4\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8 \u05E9\u05DC \u05D4\u05DE\u05DB\u05D9\u05E8\u05D4 \u05D4\u05E1\u05D9\u05E0\u05D9\u05EA!!!-\u05D4\u05D8\u05D5\u05D1 \u05D9\u05E9 \u05DC\u05D4\u05EA\u05E7\u05D9\u05DF \u05DC\u05D0\u05E7\u05E1\u05DC \u05D5\u05DC\u05D4\u05D5\u05E8\u05D9\u05D3\u05DE\u05D4\u05E2\u05E8\u05D4\u05D0\u05D5\u05EA\u05DD\\server\\ChineseAuctionApi\\Services\\AuthUserService.cs",
+              "RelativeToolTip": "..\\..\\..\\\u200F\u200F\u05D4\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8 \u05E9\u05DC \u05D4\u05DE\u05DB\u05D9\u05E8\u05D4 \u05D4\u05E1\u05D9\u05E0\u05D9\u05EA!!!-\u05D4\u05D8\u05D5\u05D1 \u05D9\u05E9 \u05DC\u05D4\u05EA\u05E7\u05D9\u05DF \u05DC\u05D0\u05E7\u05E1\u05DC \u05D5\u05DC\u05D4\u05D5\u05E8\u05D9\u05D3\u05DE\u05D4\u05E2\u05E8\u05D4\u05D0\u05D5\u05EA\u05DD\\server\\ChineseAuctionApi\\Services\\AuthUserService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T16:49:24.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BasketService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u200F\u200F\u05D4\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8 \u05E9\u05DC \u05D4\u05DE\u05DB\u05D9\u05E8\u05D4 \u05D4\u05E1\u05D9\u05E0\u05D9\u05EA!!!-\u05D4\u05D8\u05D5\u05D1 \u05D9\u05E9 \u05DC\u05D4\u05EA\u05E7\u05D9\u05DF \u05DC\u05D0\u05E7\u05E1\u05DC \u05D5\u05DC\u05D4\u05D5\u05E8\u05D9\u05D3\u05DE\u05D4\u05E2\u05E8\u05D4\u05D0\u05D5\u05EA\u05DD\\server\\ChineseAuctionApi\\Services\\Basket\\BasketService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\\u200F\u200F\u05D4\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8 \u05E9\u05DC \u05D4\u05DE\u05DB\u05D9\u05E8\u05D4 \u05D4\u05E1\u05D9\u05E0\u05D9\u05EA!!!-\u05D4\u05D8\u05D5\u05D1 \u05D9\u05E9 \u05DC\u05D4\u05EA\u05E7\u05D9\u05DF \u05DC\u05D0\u05E7\u05E1\u05DC \u05D5\u05DC\u05D4\u05D5\u05E8\u05D9\u05D3\u05DE\u05D4\u05E2\u05E8\u05D4\u05D0\u05D5\u05EA\u05DD\\server\\ChineseAuctionApi\\Services\\Basket\\BasketService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u200F\u200F\u05D4\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8 \u05E9\u05DC \u05D4\u05DE\u05DB\u05D9\u05E8\u05D4 \u05D4\u05E1\u05D9\u05E0\u05D9\u05EA!!!-\u05D4\u05D8\u05D5\u05D1 \u05D9\u05E9 \u05DC\u05D4\u05EA\u05E7\u05D9\u05DF \u05DC\u05D0\u05E7\u05E1\u05DC \u05D5\u05DC\u05D4\u05D5\u05E8\u05D9\u05D3\u05DE\u05D4\u05E2\u05E8\u05D4\u05D0\u05D5\u05EA\u05DD\\server\\ChineseAuctionApi\\Services\\Basket\\BasketService.cs",
+              "RelativeToolTip": "..\\..\\..\\\u200F\u200F\u05D4\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8 \u05E9\u05DC \u05D4\u05DE\u05DB\u05D9\u05E8\u05D4 \u05D4\u05E1\u05D9\u05E0\u05D9\u05EA!!!-\u05D4\u05D8\u05D5\u05D1 \u05D9\u05E9 \u05DC\u05D4\u05EA\u05E7\u05D9\u05DF \u05DC\u05D0\u05E7\u05E1\u05DC \u05D5\u05DC\u05D4\u05D5\u05E8\u05D9\u05D3\u05DE\u05D4\u05E2\u05E8\u05D4\u05D0\u05D5\u05EA\u05DD\\server\\ChineseAuctionApi\\Services\\Basket\\BasketService.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T16:47:52.793Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CardRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u200F\u200F\u05D4\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8 \u05E9\u05DC \u05D4\u05DE\u05DB\u05D9\u05E8\u05D4 \u05D4\u05E1\u05D9\u05E0\u05D9\u05EA!!!-\u05D4\u05D8\u05D5\u05D1 \u05D9\u05E9 \u05DC\u05D4\u05EA\u05E7\u05D9\u05DF \u05DC\u05D0\u05E7\u05E1\u05DC \u05D5\u05DC\u05D4\u05D5\u05E8\u05D9\u05D3\u05DE\u05D4\u05E2\u05E8\u05D4\u05D0\u05D5\u05EA\u05DD\\server\\ChineseAuctionApi\\Repositories\\CardRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\\u200F\u200F\u05D4\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8 \u05E9\u05DC \u05D4\u05DE\u05DB\u05D9\u05E8\u05D4 \u05D4\u05E1\u05D9\u05E0\u05D9\u05EA!!!-\u05D4\u05D8\u05D5\u05D1 \u05D9\u05E9 \u05DC\u05D4\u05EA\u05E7\u05D9\u05DF \u05DC\u05D0\u05E7\u05E1\u05DC \u05D5\u05DC\u05D4\u05D5\u05E8\u05D9\u05D3\u05DE\u05D4\u05E2\u05E8\u05D4\u05D0\u05D5\u05EA\u05DD\\server\\ChineseAuctionApi\\Repositories\\CardRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u200F\u200F\u05D4\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8 \u05E9\u05DC \u05D4\u05DE\u05DB\u05D9\u05E8\u05D4 \u05D4\u05E1\u05D9\u05E0\u05D9\u05EA!!!-\u05D4\u05D8\u05D5\u05D1 \u05D9\u05E9 \u05DC\u05D4\u05EA\u05E7\u05D9\u05DF \u05DC\u05D0\u05E7\u05E1\u05DC \u05D5\u05DC\u05D4\u05D5\u05E8\u05D9\u05D3\u05DE\u05D4\u05E2\u05E8\u05D4\u05D0\u05D5\u05EA\u05DD\\server\\ChineseAuctionApi\\Repositories\\CardRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\\u200F\u200F\u05D4\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8 \u05E9\u05DC \u05D4\u05DE\u05DB\u05D9\u05E8\u05D4 \u05D4\u05E1\u05D9\u05E0\u05D9\u05EA!!!-\u05D4\u05D8\u05D5\u05D1 \u05D9\u05E9 \u05DC\u05D4\u05EA\u05E7\u05D9\u05DF \u05DC\u05D0\u05E7\u05E1\u05DC \u05D5\u05DC\u05D4\u05D5\u05E8\u05D9\u05D3\u05DE\u05D4\u05E2\u05E8\u05D4\u05D0\u05D5\u05EA\u05DD\\server\\ChineseAuctionApi\\Repositories\\CardRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T16:43:46.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Basket.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8\u05D9\u05DD\\\u200F\u200F\u05D4\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8 \u05E9\u05DC \u05D4\u05DE\u05DB\u05D9\u05E8\u05D4 \u05D4\u05E1\u05D9\u05E0\u05D9\u05EA!!!-\u05D4\u05D8\u05D5\u05D1 \u05D9\u05E9 \u05DC\u05D4\u05EA\u05E7\u05D9\u05DF \u05DC\u05D0\u05E7\u05E1\u05DC \u05D5\u05DC\u05D4\u05D5\u05E8\u05D9\u05D3\u05DE\u05D4\u05E2\u05E8\u05D4\u05D0\u05D5\u05EA\u05DD\\server\\ChineseAuctionApi\\Models\\Basket.cs",
+              "RelativeDocumentMoniker": "ChineseAuctionApi\\Models\\Basket.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8\u05D9\u05DD\\\u200F\u200F\u05D4\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8 \u05E9\u05DC \u05D4\u05DE\u05DB\u05D9\u05E8\u05D4 \u05D4\u05E1\u05D9\u05E0\u05D9\u05EA!!!-\u05D4\u05D8\u05D5\u05D1 \u05D9\u05E9 \u05DC\u05D4\u05EA\u05E7\u05D9\u05DF \u05DC\u05D0\u05E7\u05E1\u05DC \u05D5\u05DC\u05D4\u05D5\u05E8\u05D9\u05D3\u05DE\u05D4\u05E2\u05E8\u05D4\u05D0\u05D5\u05EA\u05DD\\server\\ChineseAuctionApi\\Models\\Basket.cs",
+              "RelativeToolTip": "ChineseAuctionApi\\Models\\Basket.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T16:42:28.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IBasketRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u200F\u200F\u05D4\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8 \u05E9\u05DC \u05D4\u05DE\u05DB\u05D9\u05E8\u05D4 \u05D4\u05E1\u05D9\u05E0\u05D9\u05EA!!!-\u05D4\u05D8\u05D5\u05D1 \u05D9\u05E9 \u05DC\u05D4\u05EA\u05E7\u05D9\u05DF \u05DC\u05D0\u05E7\u05E1\u05DC \u05D5\u05DC\u05D4\u05D5\u05E8\u05D9\u05D3\u05DE\u05D4\u05E2\u05E8\u05D4\u05D0\u05D5\u05EA\u05DD\\server\\ChineseAuctionApi\\Repositories\\IBasketRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\\u200F\u200F\u05D4\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8 \u05E9\u05DC \u05D4\u05DE\u05DB\u05D9\u05E8\u05D4 \u05D4\u05E1\u05D9\u05E0\u05D9\u05EA!!!-\u05D4\u05D8\u05D5\u05D1 \u05D9\u05E9 \u05DC\u05D4\u05EA\u05E7\u05D9\u05DF \u05DC\u05D0\u05E7\u05E1\u05DC \u05D5\u05DC\u05D4\u05D5\u05E8\u05D9\u05D3\u05DE\u05D4\u05E2\u05E8\u05D4\u05D0\u05D5\u05EA\u05DD\\server\\ChineseAuctionApi\\Repositories\\IBasketRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u200F\u200F\u05D4\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8 \u05E9\u05DC \u05D4\u05DE\u05DB\u05D9\u05E8\u05D4 \u05D4\u05E1\u05D9\u05E0\u05D9\u05EA!!!-\u05D4\u05D8\u05D5\u05D1 \u05D9\u05E9 \u05DC\u05D4\u05EA\u05E7\u05D9\u05DF \u05DC\u05D0\u05E7\u05E1\u05DC \u05D5\u05DC\u05D4\u05D5\u05E8\u05D9\u05D3\u05DE\u05D4\u05E2\u05E8\u05D4\u05D0\u05D5\u05EA\u05DD\\server\\ChineseAuctionApi\\Repositories\\IBasketRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\\u200F\u200F\u05D4\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8 \u05E9\u05DC \u05D4\u05DE\u05DB\u05D9\u05E8\u05D4 \u05D4\u05E1\u05D9\u05E0\u05D9\u05EA!!!-\u05D4\u05D8\u05D5\u05D1 \u05D9\u05E9 \u05DC\u05D4\u05EA\u05E7\u05D9\u05DF \u05DC\u05D0\u05E7\u05E1\u05DC \u05D5\u05DC\u05D4\u05D5\u05E8\u05D9\u05D3\u05DE\u05D4\u05E2\u05E8\u05D4\u05D0\u05D5\u05EA\u05DD\\server\\ChineseAuctionApi\\Repositories\\IBasketRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAMAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T16:42:52.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BasketRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u200F\u200F\u05D4\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8 \u05E9\u05DC \u05D4\u05DE\u05DB\u05D9\u05E8\u05D4 \u05D4\u05E1\u05D9\u05E0\u05D9\u05EA!!!-\u05D4\u05D8\u05D5\u05D1 \u05D9\u05E9 \u05DC\u05D4\u05EA\u05E7\u05D9\u05DF \u05DC\u05D0\u05E7\u05E1\u05DC \u05D5\u05DC\u05D4\u05D5\u05E8\u05D9\u05D3\u05DE\u05D4\u05E2\u05E8\u05D4\u05D0\u05D5\u05EA\u05DD\\server\\ChineseAuctionApi\\Repositories\\BasketRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\\u200F\u200F\u05D4\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8 \u05E9\u05DC \u05D4\u05DE\u05DB\u05D9\u05E8\u05D4 \u05D4\u05E1\u05D9\u05E0\u05D9\u05EA!!!-\u05D4\u05D8\u05D5\u05D1 \u05D9\u05E9 \u05DC\u05D4\u05EA\u05E7\u05D9\u05DF \u05DC\u05D0\u05E7\u05E1\u05DC \u05D5\u05DC\u05D4\u05D5\u05E8\u05D9\u05D3\u05DE\u05D4\u05E2\u05E8\u05D4\u05D0\u05D5\u05EA\u05DD\\server\\ChineseAuctionApi\\Repositories\\BasketRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u200F\u200F\u05D4\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8 \u05E9\u05DC \u05D4\u05DE\u05DB\u05D9\u05E8\u05D4 \u05D4\u05E1\u05D9\u05E0\u05D9\u05EA!!!-\u05D4\u05D8\u05D5\u05D1 \u05D9\u05E9 \u05DC\u05D4\u05EA\u05E7\u05D9\u05DF \u05DC\u05D0\u05E7\u05E1\u05DC \u05D5\u05DC\u05D4\u05D5\u05E8\u05D9\u05D3\u05DE\u05D4\u05E2\u05E8\u05D4\u05D0\u05D5\u05EA\u05DD\\server\\ChineseAuctionApi\\Repositories\\BasketRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\\u200F\u200F\u05D4\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8 \u05E9\u05DC \u05D4\u05DE\u05DB\u05D9\u05E8\u05D4 \u05D4\u05E1\u05D9\u05E0\u05D9\u05EA!!!-\u05D4\u05D8\u05D5\u05D1 \u05D9\u05E9 \u05DC\u05D4\u05EA\u05E7\u05D9\u05DF \u05DC\u05D0\u05E7\u05E1\u05DC \u05D5\u05DC\u05D4\u05D5\u05E8\u05D9\u05D3\u05DE\u05D4\u05E2\u05E8\u05D4\u05D0\u05D5\u05EA\u05DD\\server\\ChineseAuctionApi\\Repositories\\BasketRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T16:40:47.386Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

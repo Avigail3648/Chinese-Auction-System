@@ -1,0 +1,125 @@
+@import "primeicons/primeicons.css";
+@tailwind components;
+@tailwind utilities;
+
+html {
+    font-size: 14px;
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    line-height: normal;
+}
+
+body {
+    background: var(--surface-ground);
+    color: var(--text-color);
+    padding: 1rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.p-tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(140, 153, 140);
+    border-radius: 20%;
+}
+
+.p-accordion .p-accordion-header .p-accordion-header-link {
+    padding: 1rem;
+    border: 1px solid #dee2e6;
+    color: #495057;
+    background: #f8f9fa;
+    font-weight: 600;
+    border-radius: 3px;
+    transition: box-shadow 0.2s;
+    width: 130px;
+}
+
+.p-accordion-header-link {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    -webkit-user-select: none;
+    user-select: none;
+    position: relative;
+    text-decoration: none;
+    margin-left: 1200px;
+    margin-bottom: 10px;
+}
+
+.white-space-nowrap {
+    white-space: nowrap !important;
+    margin-top: 4px;
+}
+
+.gap-6 {
+    gap: 0.5rem !important;
+}
+
+.deleteFromMyBasket {
+    color: #ffffff;
+    background: #ff0077;
+    border: 1px solid #ff0077;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+    border-radius: 12px;
+    outline-color: transparent;
+    margin-left: -17px;
+}
+.p-accordion-header-link {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    -webkit-user-select: none;
+    user-select: none;
+    position: relative;
+    text-decoration: none;
+    margin-left: 8px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+.p-accordion .p-accordion-content {
+    padding: 1rem;
+    border: 1px solid #dee2e6;
+    background: #ffffff;
+    color: #495057;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    width: 260px;
+    margin-left: 8px;
+}
+
+.p-accordion-header-link {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    -webkit-user-select: none;
+    user-select: none;
+    position: relative;
+    text-decoration: none;
+    margin-left: 8px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+.p-accordion .p-accordion-content {
+    padding: 1rem;
+    border: 1px solid #dee2e6;
+    background: #ffffff;
+    color: #495057;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    width: 260px;
+    margin-left: 8px;
+}
+
+.p-6 {
+    padding: 0rem !important;
+}

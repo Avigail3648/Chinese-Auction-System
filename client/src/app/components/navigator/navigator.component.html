@@ -1,0 +1,30 @@
+<nav class="navbar">
+  <ul class="nav-list">
+    <li *ngIf="isAdmin" class="nav-item" routerLinkActive="active">
+      <a routerLink="/donor">ניהול תורמים</a>
+    </li>
+    <li *ngIf="isAdmin" class="nav-item" routerLinkActive="active">
+      <a routerLink="/card">רכישות</a>
+    </li>
+    <li *ngIf="isAdmin" class="nav-item" routerLinkActive="active">
+      <a routerLink="/gift">ניהול מתנות</a>
+    </li>
+
+    <li *ngIf="!isAdmin" class="nav-item" routerLinkActive="active">
+      <a routerLink="/basket">הסל שלי</a>
+    </li>
+    <li *ngIf="!isAdmin" class="nav-item" routerLinkActive="active">
+      <a routerLink="/giftSale">המתנות שלנו</a>
+    </li>
+
+    <li class="nav-item" routerLinkActive="active">
+      <a routerLink="/login">כניסה</a>
+    </li>
+    <li class="nav-item" routerLinkActive="active">
+      <a routerLink="/register">הרשמה</a>
+    </li>
+    <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+      <a routerLink="/">בית</a>
+    </li>
+  </ul>
+</nav>

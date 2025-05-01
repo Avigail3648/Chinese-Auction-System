@@ -1,0 +1,49 @@
+<p-toast></p-toast>
+@if(!isAdmin){
+<div dir="rtl" class="card login-signup-container">
+
+    <div class="content-container">
+        <div class="login-section">
+            <div class="input-group">
+                <label for="mail" class="input-label">מייל</label>
+                <input id="mail" (focus)="touchEmail=true" pInputText [(ngModel)]="mail" class="w-14rem" type="email"
+                    required />
+                <small class="p-error" *ngIf="touchEmail && !mail">
+                    *שדה חובה
+                </small>
+                <small class="p-error"
+                    *ngIf="mail &&( !mail.includes('@') || (!mail.includes('.com') && !mail.includes('co.il') && !mail.includes('gov.il')))">
+                    כתובת מייל לא תקינה
+                </small>
+            </div>
+
+            <div class="input-group">
+                <label for="password" class="input-label">סיסמה</label>
+                <p-password (change)="touchPassword=true" id="float-input" id="password" [(ngModel)]="password"
+                    [toggleMask]="true" required></p-password>
+                <small class="p-error" *ngIf="touchPassword && !password">
+                    *שדה חובה
+                </small>
+            </div>
+            <button icon="pi pi-user" pButton (click)="login()" class="login-button" label="כניסה"
+                [disabled]="!mail || !password || mail &&( !mail.includes('@') || (!mail.includes('.com') && !mail.includes('co.il') && !mail.includes('gov.il')))"></button>
+        </div>
+        <div class="divider">
+            <div class="divider-line"></div>
+            <span class="divider-text" style="color: lightgray;">/</span>
+            <div class="divider-line"></div>
+        </div>
+
+        <div
+            class="signup-section w-full md:w-5 flex align-items-center justify-content-center py-5 flex flex-col gap-2">
+            <button label="הרשמה" icon="pi pi-user-plus" (click)="navigate('register')" pButton severity="success"
+                class="signup-button"></button>
+            <button label="כניסה כמנהל " icon="pi pi-graduation-cap" (click)="isAdmin=true" pButton severity="success"
+                class="signup-button"></button>
+        </div>
+    </div>
+</div>
+}
+@if(isAdmin){
+<app-admin-login (returnToFather)="isAdmin=false"></app-admin-login>
+}

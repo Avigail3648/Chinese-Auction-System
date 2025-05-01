@@ -1,0 +1,22 @@
+<p-toast></p-toast>
+<div dir="rtl" class="card login-signup-container">
+    <div class="content-container">
+        <div class="login-section-admin">
+            <div class="input-group">
+                <label for="password" class="input-label">הכנס סיסמת מנהל</label>
+                <p-password (change)="touchPassword=true" id="float-input" id="password" [(ngModel)]="password"
+                    [toggleMask]="true" required></p-password>
+                <small class="p-error" *ngIf="touchPassword && !password">
+                    *שדה חובה
+                </small>
+            </div>
+            <div class="flex-row gap-2 buttons-div" style=" flex-direction: row;">
+                <button [disabled]="!password" icon="pi pi-user" pButton (click)="login()" class="login-button-admin"
+                    label="כניסה"></button>
+                <br>
+                <button label="חזרה" icon="pi " (click)="return()" pButton severity="success"
+                    class="signup-button-admin"></button>
+            </div>
+        </div>
+    </div>
+</div>

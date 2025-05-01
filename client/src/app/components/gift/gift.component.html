@@ -1,0 +1,198 @@
+<div dir="rtl" class="card">
+    <p-toolbar styleClass="mb-4 gap-2">
+        <ng-template pTemplate="left">
+            <p-button severity="success" label="הוספת מתנה" icon="pi pi-plus" class="mr-2" (onClick)="openNew()" />
+            &nbsp;
+            <p-button severity="danger" label="מחיקה" icon="pi pi-trash" (onClick)="deleteSelectedGifts()"
+                [disabled]="!selectedGifts || !selectedGifts.length" />
+        </ng-template>
+        <ng-template pTemplate="right">
+            <p-button severity="help" label="Export" icon="pi pi-upload" (click)="exportToExcel()" />
+        </ng-template>
+    </p-toolbar>
+    <p-toast />
+
+    <p-table #dt [value]="gifts$" [rows]="4" [paginator]="true"
+        [globalFilterFields]="['giftId', 'name', 'cardPrice', 'monetaryValue', 'numberWinners','categoryName','donorName']"
+        [tableStyle]="{ 'min-width': '75rem' }" [(selection)]="selectedGifts" [rowHover]="true" dataKey="giftId"
+        currentPageReportTemplate="מציג {last} - {first} מתוך {totalRecords} מתנות" [showCurrentPageReport]="true">
+        <ng-template pTemplate="caption">
+            <div class="flex align-items-center justify-content-between">
+                <h1 class="m-0">ניהול מתנות</h1>
+                <div class="filterName">
+                    <div class="field">
+                        <p-dropdown placeholder="בחר שדה סינון" [options]="arrFilterBy" [(ngModel)]="filterName">
+                            <ng-template let-option>
+                                <p-tag [value]="filterName" />
+                            </ng-template>
+                        </p-dropdown>
+                    </div>
+                    <span class="p-input-icon-left">
+                        <input pInputText type="text" [(ngModel)]="tmpgiftName"
+                            (ngModelChange)="onGiftNameChange($event)" placeholder="חיפוש" />
+                    </span>
+                </div>
+            </div>
+        </ng-template>
+        <ng-template pTemplate="header">
+            <tr>
+                <th style="text-align: center; width: 5%;">
+                    <p-tableHeaderCheckbox />
+                </th>
+                <th style="text-align: center; width: 15%;">
+                </th>
+                <th style="text-align: center; width: 10%;" pSortableColumn="giftId" style="min-width:15rem">
+                    מספר מתנה <p-sortIcon field="giftId" />
+                </th>
+                <th pSortableColumn="name" style="text-align: center; width: 20%;">
+                    מתנה <p-sortIcon field="name" />
+                </th>
+                <th pSortableColumn="categoryName" style="text-align: center; width: 15%;">
+                    קטגוריה
+                    <p-sortIcon field="categoryName" />
+                </th>
+                <th pSortableColumn="donorName" style="text-align: center; width: 15%;">
+                    תורם <p-sortIcon field="donorName" />
+                </th>
+                <th style="text-align: center; width: 10%;">
+                    פרטים
+                </th>
+                <th pSortableColumn="cardPrice" style="text-align: center; width: 10%;">
+                    מחיר כרטיס <p-sortIcon field="cardPrice" />
+                </th>
+                <th pSortableColumn="monetaryValue" style="text-align: center; width: 10%;">
+                    שווי הזכיה
+                    <p-sortIcon field="monetaryValue" />
+                </th>
+                <th></th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-gift>
+            <tr>
+                <td style="text-align: center;">
+                    <p-tableCheckbox [value]="gift" />
+                </td>
+                <td style="text-align: center;">
+                    <img [src]="''+gift.image" [alt]="gift.name" width="200" class="shadow-4"
+                        style="justify-content: center;" />
+                </td>
+                <td style="text-align: center;">
+                    {{ gift.giftId }}
+                </td>
+                <td style="text-align: center;">
+                    {{ gift.name }}
+                </td>
+                <td style="text-align: center;">
+                    {{ gift.categoryName}}
+                </td>
+                <td style="text-align: center;">
+                    {{ gift.donorName}}
+                </td>
+                <td style="text-align: center;">
+                    {{ gift.details}}
+                </td>
+                <td style="text-align: center;">
+                    {{ gift.cardPrice | currency:'ILS' }}
+                </td>
+                <td style="text-align: center;">
+                    {{ gift.monetaryValue }}
+                </td>
+                <td style="text-align: center;">
+                    <p-button [disabled]="winnerGifts.includes(gift.name)" icon="pi pi-pencil" class="mr-2"
+                        [rounded]="true" [outlined]="true" severity="success" (onClick)="editGift(gift)" />
+                </td>
+                <td>
+                    <p-button [disabled]="winnerGifts.includes(gift.name)" icon="pi pi-trash" severity="danger"
+                        [rounded]="true" [outlined]="true" (onClick)="deleteGift(gift)" />
+                </td>
+                <td>
+                    <p-button label="הגרלה" [raised]="true" severity="info" icon="pi pi-sparkles"
+                        (onClick)="random(gift)" [disabled]="winnerGifts.includes(gift.name)" />
+                </td>
+            </tr>
+        </ng-template>
+    </p-table>
+
+    <p-dialog [(visible)]="giftDialog" [style]="{ width: '450px' }" header="פרטי מתנה" [modal]="true"
+        styleClass="p-fluid">
+        <ng-template pTemplate="content">
+
+            <div class="field">
+                <input style="display: none;" type="text" pInputText id="name" required autofocus />
+                <div class="field">
+                    <label for="name">שם מתנה*</label>
+                    <input (focus)="touchName=true" type="text" pInputText id="name" [(ngModel)]="gift.name" required
+                        autofocus="false" />
+                    <small class="p-error" *ngIf="touchName && !gift.name">
+                        שדה חובה
+                    </small>
+                    <small class="p-error"
+                        *ngIf="giftsNames.includes(gift.name) && (!edit) || giftsNames.includes(gift.name) && edit && gift.name!=nameBefore">
+                        שם המתנה כבר קיים במערכת יש להכניס שם אחר
+                    </small>
+                    <small class="p-error" *ngIf="gift.name.length<2 && gift.name">
+                        מינימום 2 תווים
+                    </small>
+                    <small class="p-error" *ngIf="gift.name.length>20 && gift.name">
+                        מקסימום 20 תווים
+                    </small>
+                </div>
+            </div>
+            <div class="field">
+                <label for="description">פרטים</label>
+                <textarea id="details" pInputTextarea [(ngModel)]="gift.details" rows="3" cols="20">
+                    </textarea>
+            </div>
+            <div class="field">
+                <label for="name">תמונה*</label>
+                <input (focus)="touchImage=true" type="text" pInputText id="image" [(ngModel)]="gift.image" required
+                    autofocus="false" />
+                <small class="p-error" *ngIf="touchImage && !gift.image">
+                    שדה חובה
+                </small>
+            </div>
+            <div class="donorName">
+                <div class="field">
+                    <label for="donorName"> תורם*</label>
+                    <p-dropdown placeholder="בחר תורם" [options]="donors$" [(ngModel)]="gift.donorName">
+                        <ng-template let-option>
+                            <p-tag [value]="gift.donorName" />
+                        </ng-template>
+                    </p-dropdown>
+                </div>
+            </div>
+            <div class="categoryName">
+                <div class="field">
+                    <label for="categoryName"> קטגוריה*</label>
+                    <p-dropdown placeholder="בחר קטגוריה" [options]="categoriesName" [(ngModel)]="gift.categoryName">
+                        <ng-template let-option>
+                            <p-tag [value]="gift.categoryName" />
+                        </ng-template>
+                    </p-dropdown>
+                </div>
+            </div>
+            <div class="formgrid grid">
+                <div class="field col">
+                    <label for="price">מחיר כרטיס*</label>
+                    <input type="number" pInputText id="cardPrice" [(ngModel)]="gift.cardPrice" required autofocus />
+                    <small class="p-error" *ngIf=" !gift.cardPrice">
+                        שדה חובה
+                    </small>
+                    <small class="p-error" *ngIf="gift.cardPrice<10 && gift.cardPrice">
+                        מחיר כרטיס מינמלי 10 ש"ח
+                    </small>
+                </div>
+                <div class="field col">
+                    <label for="monetaryValue">ערך כספי</label>
+                    <input type="number" pInputText id="monetaryValue" [(ngModel)]="gift.monetaryValue" autofocus />
+                </div>
+            </div>
+        </ng-template>
+
+        <ng-template pTemplate="footer">
+            <p-button label="ביטול" icon="pi pi-times" [text]="true" (onClick)="hideDialog()" />
+            <p-button label="שמירה" icon="pi pi-check" [text]="true" (onClick)="saveGift()" [disabled]="(!gift.name || giftsNames.includes(gift.name) && (!edit) || (edit && gift.name!=nameBefore && giftsNames.includes(gift.name))  || !gift.donorName || !gift.cardPrice || !gift.categoryName) || (gift.name && gift.name.length<2) || (gift.name && gift.name.length>24 ) 
+                ||  !gift.image ||(gift.cardPrice && gift.cardPrice<10)" /> </ng-template>
+    </p-dialog>
+    <p-confirmDialog [style]="{ width: '450px' }" />
+</div>

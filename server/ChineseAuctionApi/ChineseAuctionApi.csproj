@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Services\Card\**" />
+    <Compile Remove="Services\Donor\**" />
+    <Compile Remove="Services\Gift\**" />
+    <Compile Remove="Services\Lottery\**" />
+    <Content Remove="Services\Card\**" />
+    <Content Remove="Services\Donor\**" />
+    <Content Remove="Services\Gift\**" />
+    <Content Remove="Services\Lottery\**" />
+    <EmbeddedResource Remove="Services\Card\**" />
+    <EmbeddedResource Remove="Services\Donor\**" />
+    <EmbeddedResource Remove="Services\Gift\**" />
+    <EmbeddedResource Remove="Services\Lottery\**" />
+    <None Remove="Services\Card\**" />
+    <None Remove="Services\Donor\**" />
+    <None Remove="Services\Gift\**" />
+    <None Remove="Services\Lottery\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Serilog" Version="4.2.0" />
+    <PackageReference Include="Serilog.Extensions.Hosting" Version="9.0.0" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="9.0.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="6.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="7.2.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="7.2.0" />
+  </ItemGroup>
+
+</Project>

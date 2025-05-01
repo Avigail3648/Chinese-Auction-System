@@ -1,0 +1,56 @@
+<br>
+<p-button severity="help" label="Export" icon="pi pi-upload" (click)="exportToExcel()" />
+
+<div class="card">
+    <p-table [value]="allGiftWithCards" dataKey="gift.giftId" [tableStyle]="{ 'min-width': '60rem' }"
+        [expandedRowKeys]="expandedRows">
+        <ng-template pTemplate="header">
+            <h1 style="text-align: center;">ניהול רכישות</h1>
+        </ng-template>
+
+        <ng-template pTemplate="body" let-gift let-rowIndex="rowIndex" let-expanded="expanded">
+            <tr>
+                <td colspan="5">
+                    <div class="gift-item">
+                        <button type="button" pButton (click)="toggleRowExpansion(gift)"
+                            class="p-button-text p-button-rounded p-button-plain"
+                            [icon]="expandedRows[gift.gift.giftId] ? 'pi pi-chevron-down' : 'pi pi-chevron-left'">
+                        </button>
+                        <span class="gift-name">{{gift.gift.name}}</span>
+                        <img [src]="gift.gift.image" [alt]="gift.name" class="gift-image" />
+                    </div>
+                </td>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="rowexpansion" let-gift>
+            <tr>
+                <td colspan="7">
+                    <div class="p-3">
+                        <p-table [value]="gift.cards" dataKey="id">
+                            <ng-template pTemplate="header">
+            <tr>
+                <th>האם זכה </th>
+                <th>כתובת מייל </th>
+                <th>מספר פלאפון </th>
+                <th>שם הרוכש </th>
+                <th>מספר כרטיס</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-card>
+            <tr>
+                <td>{{ card.isWin ? 'כן' : 'לא' }}</td>
+                <td>{{card.user.mail }}</td>
+                <td>{{card.user.phone }}</td>
+                <td>{{card.user.name }}</td>
+                <td>{{card.cardId}}</td>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="emptymessage">
+            <tr>
+                <td colspan="6">לא נרכשו כרטיסים עבור מתנה זאת</td>
+            </tr>
+        </ng-template>
+        <p-confirmDialog [style]="{ width: '450px' }" />
+
+    </p-table>
+</div>

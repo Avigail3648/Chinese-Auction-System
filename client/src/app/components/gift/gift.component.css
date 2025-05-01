@@ -1,0 +1,34 @@
+ .p-datatable th {
+    text-align: center;
+    font-weight: bold;
+    background-color: #f4f4f4; 
+    padding: 10px;
+}
+
+.p-datatable td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+.p-datatable tr:hover {
+    background-color: #f1f1f1;
+}
+
+.p-datatable th, .p-datatable td {
+    padding: 10px;
+}
+
+.p-button {
+    text-align: center;
+    margin: 5px;
+}
+
+.filterName .field {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.p-datatable {
+    margin-top: 20px;
+}

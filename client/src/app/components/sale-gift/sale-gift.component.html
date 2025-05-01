@@ -1,0 +1,26 @@
+<div class="div">
+  <p-toast></p-toast>
+  <div class="gifts-container">
+    <div class="gift-card" *ngFor="let gift of gifts">
+      <div class="gift-image-container">
+        <img [src]="gift.image" [alt]="gift.image" width="300" class="shadow-4" style="justify-content: center;" />
+        <p-tag [value]="gift.categoryName" class="absolute" styleClass="dark:!bg-surface-900" [style.left.px]="4"
+          [style.top.px]="4" id="theCategory" />
+      </div>
+      <div class="gift-details">
+        <h1 class="gift-name">{{ gift.name }}</h1>
+        <h1 class="gift-details">{{ gift.details }}</h1>
+        <p class="gift-price">{{ gift.cardPrice | currency:'ILS' }} </p>
+        <div class="bg-surface-0 flex products-center gap-2 justify-center py-1 px-2"
+          style="border-radius: 30px; box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.04), 0px 1px 2px 0px rgba(0, 0, 0, 0.06); width: 120px; margin-top: 10px;">
+          <span class="text-surface-900 font-medium text-sm">ערך כספי: {{
+            gift.monetaryValue }}</span>
+          <i class="pi pi-star-fill text-orange-500"></i>
+        </div>
+        <button label=" הוסף לסל" icon="pi pi-shopping-cart" pButton (click)="addToBasket(gift.giftId)"
+          severity="success" [disabled]="numbersId.includes(gift.giftId)" class="signup-button"></button>
+        <button label="הצג זוכה" pButton (click)="show(gift.giftId)" severity="success"
+          [disabled]="!numbersId.includes(gift.giftId)" class="signup-button"></button>
+      </div>
+    </div>
+  </div>

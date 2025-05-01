@@ -1,0 +1,212 @@
+<div dir="rtl" class="card">
+    <p-toast></p-toast>
+    <p-toolbar styleClass="mb-4 gap-2">
+        <ng-template pTemplate="left">
+            <p-button severity="success" label="הוספת תורם" icon="pi pi-plus" class="mr-2" (onClick)="openNew()" />
+        </ng-template>
+    </p-toolbar>
+
+    <p-table #dt1 [value]="donors" dataKey="donorId" editMode="row" [tableStyle]="{'min-width': '50rem'}">
+        <ng-template pTemplate="caption">
+            <div class="flex align-items-center justify-content-between">
+                <h1 class="m-0">ניהול תורמים</h1>
+                <span class="p-input-icon-left">
+                    <i class="pi pi-search"></i>
+                    <input pInputText type="text" [(ngModel)]="tmpgiftName" (ngModelChange)="onDonorNameChange($event)"
+                        placeholder="חיפוש תורם" />
+                </span>
+            </div>
+        </ng-template>
+        <ng-template pTemplate="header">
+            <tr>
+                <th style="width:20%">מספר</th>
+                <th style="width:20%">שם</th>
+                <th style="width:20%">כתובת</th>
+                <th style="width:20%">פלאפון</th>
+                <th style="width:20%">מייל</th>
+                <th style="width:20%">מתנות</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-donor let-editing="editing" let-ri="rowIndex">
+            <tr [pEditableRow]="donor">
+                <td>
+                    <p-cellEditor>
+                        <ng-template pTemplate="input">
+                            <input disabled="true" pInputText type="text" [ngModel]="donor.donorId" />
+                        </ng-template>
+                        <ng-template pTemplate="output">
+                            {{donor.donorId}}
+                        </ng-template>
+                    </p-cellEditor>
+                </td>
+                <td>
+                    <p-cellEditor>
+                        <ng-template pTemplate="input">
+                            <input pInputText type="text" [(ngModel)]="donor.name" />
+                        </ng-template>
+                        <ng-template pTemplate="output">
+                            {{donor.name}}
+                        </ng-template>
+                    </p-cellEditor>
+                </td>
+                <td>
+                    <p-cellEditor>
+                        <ng-template pTemplate="input">
+                            <input pInputText type="text" [(ngModel)]="donor.address" required />
+                        </ng-template>
+                        <ng-template pTemplate="output">
+                            {{donor.address}}
+                        </ng-template>
+                    </p-cellEditor>
+                </td>
+                <td>
+                    <p-cellEditor>
+                        <ng-template pTemplate="input">
+                            <input pInputText type="text" [(ngModel)]="donor.phone" required />
+                        </ng-template>
+                        <ng-template pTemplate="output">
+                            {{donor.phone}}
+                        </ng-template>
+                    </p-cellEditor>
+                </td>
+                <td>
+                    <p-cellEditor>
+                        <ng-template pTemplate="input">
+                            <input pInputText type="text" [(ngModel)]="donor.mail" />
+                        </ng-template>
+                        <ng-template pTemplate="output">
+                            {{donor.mail}}
+                        </ng-template>
+                    </p-cellEditor>
+                </td>
+
+                <td>
+                    <a pButton pRipple type="link" icon="pi pi-gift" class="p-button-rounded p-button-success"
+                        (click)="openGifts(donor)">
+                    </a>
+                </td>
+                <td>
+                    <div class="flex align-items-center justify-content-center gap-2">
+                        <button pButton pRipple type="button" icon="pi pi-trash"
+                            class="p-button-rounded p-button-danger" (click)="deleteDonor(donor)">
+                        </button>
+                        <button *ngIf="!editing" pButton pRipple type="button" pInitEditableRow icon="pi pi-pencil"
+                            (click)="onRowEditInit(donor)" class="p-button-rounded p-button-text">
+                        </button>
+                        <button *ngIf="editing" pButton pRipple type="button" pSaveEditableRow icon="pi pi-check"
+                            (click)="onRowEditSave(donor)" class="p-button-rounded p-button-text p-button-success mr-2">
+                        </button>
+                        <button *ngIf="editing" pButton pRipple type="button" pCancelEditableRow icon="pi pi-times"
+                            (click)="onRowEditCancel(donor, ri)" class="p-button-rounded p-button-text p-button-danger">
+                        </button>
+                    </div>
+                </td>
+            </tr>
+        </ng-template>
+    </p-table>
+
+    <p-dialog [(visible)]="donorDialog" [style]="{ width: '450px' }" header="פרטי תורם" [modal]="true"
+        styleClass="p-fluid">
+        <ng-template pTemplate="content">
+            <input style="display: none;" (focus)="touchName=true" type="text" pInputText id="name"
+                [(ngModel)]="Adddonor.name" required autofocus />
+            <div class="field">
+                <label for="name">שם*</label>
+                <input (focus)="touchName=true" type="text" pInputText id="name" [(ngModel)]="Adddonor.name" required
+                    autofocus="false" />
+                <small class="p-error" *ngIf="touchName && !Adddonor.name">
+                    שדה חובה
+                </small>
+            </div>
+
+            <div class="field">
+                <label for="description">כתובת</label>
+                <input type="text" pInputText id="address" [(ngModel)]="Adddonor.address" />
+            </div>
+
+            <div class="field">
+                <label for="description">פלאפון</label>
+                <input type="text" pInputText id="image" [(ngModel)]="Adddonor.phone" />
+
+            </div>
+
+            <div class="field">
+                <label for="price">מייל*</label>
+                <input (focus)="touchEmail=true" type="email" pInputText id="mail" [(ngModel)]="Adddonor.mail" required
+                    autofocus="false" />
+                <small class="p-error" *ngIf="touchEmail && !Adddonor.mail">
+                    שדה חובה
+                </small>
+                <small class="p-error"
+                    *ngIf="Adddonor.mail &&( !Adddonor.mail.includes('@') || (!Adddonor.mail.includes('gmail.com') && !Adddonor.mail.includes('co.il') && !Adddonor.mail.includes('gov.il')))">
+                    כתובת מייל לא תקינה
+                </small>
+            </div>
+        </ng-template>
+
+        <ng-template pTemplate="footer">
+            <p-button label="ביטול" icon="pi pi-times" [text]="true" (onClick)="hideDialog()" />
+            <p-button label="שמירה" icon="pi pi-check" [text]="true" (onClick)="saveDonor()"
+                [disabled]="(!Adddonor.mail || !Adddonor.name || Adddonor.mail &&( !Adddonor.mail.includes('@') || (!Adddonor.mail.includes('gmail.com') && !Adddonor.mail.includes('co.il') && !Adddonor.mail.includes('gov.il'))))" />
+        </ng-template>
+    </p-dialog>
+
+    <p-confirmDialog [style]="{ width: '450px' }" />
+
+    <p-dialog dir="ltr" header="מתנות" [resizable]="false" [modal]="true" [maximizable]="true" appendTo="body"
+        [(visible)]="showGift" [style]="{width: '75vw'}" [contentStyle]="{height: '300px'}">
+        <h1 *ngIf="gifts.length==0" style="text-align: center;">לתורם זה לא נמצאו מתנות</h1>
+        <p-table *ngIf="gifts.length>0" [value]="gifts" [scrollable]="true" scrollHeight="flex"
+            [tableStyle]="{'min-width': '50rem'}">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>
+                    </th>
+                    <th>
+                        ערך כספי
+                    </th>
+                    <th>
+                        מחיר כרטיס
+                    </th>
+                    <th>
+                        קטגוריה
+                    </th>
+                    <th>
+                        פרטים
+                    </th>
+                    <th>
+                        שם מתנה
+                    </th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-gift>
+                <tr>
+                    <td>
+                        <img [src]="''+gift.image" [alt]="gift.name" width="200" class="shadow-4"
+                            style="justify-content: center;" />
+                    </td>
+                    <td>
+                        {{gift.monetaryValue}}
+                    </td>
+                    <td>
+                        {{gift.cardPrice}}
+                    </td>
+                    <td>
+                        {{gift.categoryName}}
+                    </td>
+                    <td>
+                        {{gift.details}}
+                    </td>
+                    <td>
+                        {{gift.name}}
+                    </td>
+                </tr>
+            </ng-template>
+        </p-table>
+        <ng-template pTemplate="footer">
+            <button type="button" pButton pRipple icon="pi pi-times" (click)="showGift=false" label="סגירה"
+                class="p-button-text">
+            </button>
+        </ng-template>
+    </p-dialog>
+</div>
