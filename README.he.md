@@ -13,9 +13,9 @@
 כדי להריץ את הפרויקט באופן מקומי, בצעו את השלבים הבאים:
 
 1. שִכְפְלו את הרפוזיטורי:  
-   `git clone https://github.com/YourUsername/Ticket-Sales-System.git`
+   `git clone https://github.com/Avigail3648/Chinese-Auction-System.git`
 2. היכנסו לתיקיית הפרויקט:  
-   `cd Ticket-Sales-System`
+   `cd Chinese-Auction-System`
 3. התקינו את התלויות של ה-Backend:  
    `dotnet restore
 4. הריצו את שרת ה-API:  
